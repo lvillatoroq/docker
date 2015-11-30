@@ -11,7 +11,7 @@ MAINTAINER Luis Villatoro
 
 #Update repository List
 RUN apt-get update
-RUN apt-get -y install build-essential
+RUN apt-get -y install wget
 
 #Install JDK 7
 RUN apt-get install -y openjdk-7-jdk
