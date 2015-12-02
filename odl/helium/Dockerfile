@@ -10,7 +10,7 @@ FROM gliderlabs/alpine:latest
 MAINTAINER Luis Villatoro
 
 #Install JDK 7
-RUN apk add --update openjdk7-jre-base openssl unzip 
+RUN apk add --update openjdk7-jre-base openssl unzip && rm -rf /var/cache/apk/*
 
 #Download and Install ODL
 
